@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Okiniiri: Coffee Brew Log — Support</title>
+<style>
+  :root {
+    --bg: #FAF7F2; --card: #FFFFFF; --text: #2B1B15; --muted: #7A6A60;
+    --line: #EDE6DC; --accent: #C2703D; --hero1: #4A3024; --hero2: #1C120E; --onhero: #F3E8DA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1C120E; --card: #2B1B15; --text: #F3E8DA; --muted: #C9B8AA; --line: #4A3024; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6; font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 80px; }
+  .hero {
+    background: linear-gradient(135deg, var(--hero1), var(--hero2)); color: var(--onhero);
+    border-radius: 24px; padding: 32px 24px; margin-bottom: 28px;
+  }
+  .hero h1 { font-size: 30px; line-height: 1.35; margin: 0 0 4px; color: #fff; }
+  .hero .en { font-size: 14px; letter-spacing: .12em; opacity: .75; margin-bottom: 14px; }
+  .hero p { margin: 0; }
+  h2 { font-size: 15px; letter-spacing: .08em; color: var(--muted); margin: 28px 4px 10px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 700; cursor: pointer; list-style: none; position: relative; padding-right: 32px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "＋"; position: absolute; right: 0; top: 0; color: var(--muted); }
+  details[open] summary::after { content: "−"; }
+  details p { margin: 10px 0 2px; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .contact a { font-weight: 700; word-break: break-all; }
+  a { color: var(--accent); }
+  footer { margin-top: 32px; font-size: 14px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <h1>Okiniiri</h1>
+    <div class="en">COFFEE BREW LOG</div>
+    <p>Log every cup and discover how you like your coffee brewed.</p>
+  </div>
+
+  <h2>FAQ</h2>
+
+  <details>
+    <summary>Where is my data stored?</summary>
+    <p>Only on your iPhone. Nothing is sent to our servers, and no account is needed.</p>
+  </details>
+
+  <details>
+    <summary>How do I move to a new phone?</summary>
+    <p>Go to Settings › Export backup to save your cups, beans, brewers and photos in one file. Keep it somewhere like iCloud Drive, then use Settings › Restore from backup on the new iPhone. Restoring never deletes existing data.</p>
+  </details>
+
+  <details>
+    <summary>How do I remove ads?</summary>
+    <p>Settings › Go ad-free. It's a one-time purchase — no subscription.</p>
+  </details>
+
+  <details>
+    <summary>I paid, but I still see ads</summary>
+    <p>Tap Settings › Restore purchase. Make sure you're signed in with the same Apple ID you used to buy.</p>
+  </details>
+
+  <details>
+    <summary>Tapping the stars doesn't save my cup</summary>
+    <p>Rate with the stars, then tap “Log it” at the bottom. If beans or a brewer are missing, the button tells you what's needed.</p>
+  </details>
+
+  <details>
+    <summary>“What made it good” is empty</summary>
+    <p>Once you've logged enough cups with details like water temp and grind, Okiniiri shows the conditions linked to your higher ratings. Tap “Add details” when logging to include them.</p>
+  </details>
+
+  <details>
+    <summary>Can I use Fahrenheit?</summary>
+    <p>Yes. Settings › Temperature unit switches between °C and °F at any time. Past cups are converted automatically.</p>
+  </details>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    <p>Bug reports and feature requests are always welcome.</p>
+    <a href="mailto:favorite.coffeelog@gmail.com">favorite.coffeelog@gmail.com</a>
+  </div>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · <a href="../">日本語</a>
+  </footer>
+</main>
+</body>
+</html>
