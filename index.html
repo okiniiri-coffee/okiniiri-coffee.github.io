@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>おきに煎り -coffee log- サポート</title>
+<style>
+  :root {
+    --bg: #FAF7F2; --card: #FFFFFF; --text: #2B1B15; --muted: #7A6A60;
+    --line: #EDE6DC; --accent: #C2703D; --hero1: #4A3024; --hero2: #1C120E; --onhero: #F3E8DA;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1C120E; --card: #2B1B15; --text: #F3E8DA; --muted: #C9B8AA; --line: #4A3024; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    line-height: 1.85; font-size: 16px;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 80px; }
+  .hero {
+    background: linear-gradient(135deg, var(--hero1), var(--hero2)); color: var(--onhero);
+    border-radius: 24px; padding: 32px 24px; margin-bottom: 28px;
+  }
+  .hero h1 { font-size: 30px; line-height: 1.35; margin: 0 0 4px; color: #fff; }
+  .hero .en { font-size: 14px; letter-spacing: .12em; opacity: .75; margin-bottom: 14px; }
+  .hero p { margin: 0; }
+  h2 { font-size: 15px; letter-spacing: .08em; color: var(--muted); margin: 28px 4px 10px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 700; cursor: pointer; list-style: none; position: relative; padding-right: 32px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "＋"; position: absolute; right: 0; top: 0; color: var(--muted); }
+  details[open] summary::after { content: "−"; }
+  details p { margin: 10px 0 2px; }
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+  .contact a { font-weight: 700; word-break: break-all; }
+  a { color: var(--accent); }
+  footer { margin-top: 32px; font-size: 14px; color: var(--muted); text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <h1>おきに煎り</h1>
+    <div class="en">COFFEE LOG</div>
+    <p>毎日の一杯を記録して、あなた好みの淹れ方を見つけるアプリです。</p>
+  </div>
+
+  <h2>よくある質問</h2>
+
+  <details>
+    <summary>記録はどこに保存されますか？</summary>
+    <p>お使いの iPhone の中だけに保存されます。開発者のサーバーには送信されません。アカウント登録も不要です。</p>
+  </details>
+
+  <details>
+    <summary>機種変更するときは？</summary>
+    <p>設定 ＞「バックアップを書き出す」で、記録・豆・器具・写真を1つのファイルにまとめられます。iCloud Drive などに保存し、新しい iPhone で 設定 ＞「バックアップから復元する」を選んでください。復元しても、今ある記録は消えません。</p>
+  </details>
+
+  <details>
+    <summary>広告を消したい</summary>
+    <p>設定 ＞「広告なしで使う」から、一度の購入（買い切り）で広告を非表示にできます。毎月の支払いはありません。</p>
+  </details>
+
+  <details>
+    <summary>購入したのに広告が表示されます</summary>
+    <p>設定 ＞「購入を復元」をお試しください。購入時と同じ Apple ID でサインインしている必要があります。</p>
+  </details>
+
+  <details>
+    <summary>星をタップしても保存されません</summary>
+    <p>星で評価をつけたあと、画面下の「記録する」を押すと保存されます。豆や器具が選ばれていないときは、ボタンに足りない項目が表示されます。</p>
+  </details>
+
+  <details>
+    <summary>「おいしかった条件」が表示されません</summary>
+    <p>湯温や挽き目などの詳しい記録がある程度たまると、評価が上がりやすい条件を自動で見つけて表示します。「詳しく記録する」から湯温・粒度・粉量などを入れてみてください。</p>
+  </details>
+
+  <h2>お問い合わせ</h2>
+  <div class="contact">
+    <p>不具合のご報告やご要望は、こちらまでお気軽にどうぞ。</p>
+    <a href="mailto:favorite.coffeelog@gmail.com">favorite.coffeelog@gmail.com</a>
+  </div>
+
+  <footer>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </footer>
+</main>
+</body>
+</html>
