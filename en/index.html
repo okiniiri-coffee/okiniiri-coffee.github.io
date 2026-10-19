@@ -58,6 +58,13 @@
   .download { display: inline-block; margin-top: 22px; padding: 13px 20px; border-radius: 999px; background: #F3E8DA; color: #2B1B15; font-weight: 700; text-decoration: none; }
   .download:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
   .hero .pricing { margin-top: 14px; font-size: 14px; }
+  .first-cup { margin: 28px 0; }
+  .steps { list-style: none; counter-reset: step; padding: 0; display: grid; gap: 12px; }
+  .steps li { counter-increment: step; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 18px 64px; position: relative; }
+  .steps li::before { content: counter(step); position: absolute; left: 18px; top: 18px; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background: var(--text); color: var(--bg); font-weight: 700; }
+  .steps strong { display: block; }
+  .steps p { margin: 4px 0 0; }
+  .first-cup .note { color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
@@ -69,6 +76,16 @@
     <a class="download" href="https://apps.apple.com/us/app/id6817787613">Download on the App Store</a>
     <p class="pricing">For iPhone. All features free, with ads. Optional one-time purchase removes ads. No subscription.</p>
   </div>
+
+  <section class="first-cup" aria-labelledby="first-cup-title">
+    <h2 id="first-cup-title">Your first cup, saved</h2>
+    <ol class="steps">
+      <li><strong>Choose your beans and brewer</strong><p>Add the beans and equipment you use, then select them. Next time, your previous beans and brewer are selected for you.</p></li>
+      <li><strong>Rate your cup</strong><p>How was today's coffee? Slide across the stars to rate it, including half stars.</p></li>
+      <li><strong>Tap “Log it”</strong><p>Use “Add details” for temperature, grind and more whenever you want them.</p></li>
+    </ol>
+    <p class="note">No account needed. Once your beans and brewer are ready, a rating and a save can be enough for your next note.</p>
+  </section>
 
   <h2>FAQ</h2>
 

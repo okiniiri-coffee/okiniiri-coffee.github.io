@@ -58,6 +58,13 @@
   .download { display: inline-block; margin-top: 22px; padding: 13px 20px; border-radius: 999px; background: #F3E8DA; color: #2B1B15; font-weight: 700; text-decoration: none; }
   .download:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
   .hero .pricing { margin-top: 14px; font-size: 14px; }
+  .first-cup { margin: 28px 0; }
+  .steps { list-style: none; counter-reset: step; padding: 0; display: grid; gap: 12px; }
+  .steps li { counter-increment: step; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 18px 64px; position: relative; }
+  .steps li::before { content: counter(step); position: absolute; left: 18px; top: 18px; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; background: var(--text); color: var(--bg); font-weight: 700; }
+  .steps strong { display: block; }
+  .steps p { margin: 4px 0 0; }
+  .first-cup .note { color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
@@ -69,6 +76,16 @@
     <a class="download" href="https://apps.apple.com/jp/app/id6817787613">App Storeで入手</a>
     <p class="pricing">iPhone向け。全機能無料・広告あり。買い切りで広告を非表示にできます。月額料金はありません。</p>
   </div>
+
+  <section class="first-cup" aria-labelledby="first-cup-title">
+    <h2 id="first-cup-title">最初の一杯を記録するには</h2>
+    <ol class="steps">
+      <li><strong>豆と器具を選ぶ</strong><p>使う豆と抽出器具を登録して選びます。次回は、前回使った豆と器具が選ばれます。</p></li>
+      <li><strong>星で評価する</strong><p>今日の一杯はどうでしたか？ 星をなぞって、半分の星まで評価できます。</p></li>
+      <li><strong>「記録する」を押す</strong><p>湯温や挽き目などは、必要なときに「詳しく記録する」から追加できます。</p></li>
+    </ol>
+    <p class="note">アカウント登録は不要。豆や器具を準備したあとは、評価して保存するだけでも続けられます。</p>
+  </section>
 
   <h2>よくある質問</h2>
 
