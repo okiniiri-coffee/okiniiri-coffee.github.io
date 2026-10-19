@@ -66,16 +66,32 @@
   .steps strong { display: block; }
   .steps p { margin: 4px 0 0; }
   .first-cup .note { color: var(--muted); font-size: 14px; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) 190px; align-items: center; gap: 24px; }
+  .hero-copy { min-width: 0; }
+  .app-preview { margin: 0; text-align: center; }
+  .app-preview img { display: block; width: 190px; height: auto; border: 5px solid #160F0B; border-radius: 28px; background: #FAF7F2; box-shadow: 0 12px 28px #0005; }
+  .app-preview figcaption { margin-top: 12px; font-size: 12px; line-height: 1.5; color: var(--onhero); }
+  @media (max-width: 600px) {
+    .hero { grid-template-columns: minmax(0, 1fr); }
+    .app-preview { justify-self: center; }
+    .app-preview img { width: 168px; }
+  }
 </style>
 </head>
 <body>
 <main>
   <div class="hero">
+    <div class="hero-copy">
     <h1>Brew Keeps</h1>
     <div class="en">COFFEE BREW LOG</div>
     <p>Log every cup and discover how you like your coffee brewed.</p>
     <a class="download" href="https://apps.apple.com/us/app/id6817787613">Download on the App Store</a>
     <p class="pricing">For iPhone. All features free, with ads. Optional one-time purchase removes ads. No subscription.</p>
+    </div>
+    <figure class="app-preview">
+      <img src="../images/record-en.png" width="1320" height="2868" alt="Actual Brew Keeps record screen with beans, brewer, star rating and the Log it button" decoding="async">
+      <figcaption>Actual app screen · Sample coffee data</figcaption>
+    </figure>
   </div>
 
   <section class="first-cup" aria-labelledby="first-cup-title">

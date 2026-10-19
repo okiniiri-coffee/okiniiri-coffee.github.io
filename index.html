@@ -66,16 +66,32 @@
   .steps strong { display: block; }
   .steps p { margin: 4px 0 0; }
   .first-cup .note { color: var(--muted); font-size: 14px; }
+  .hero { display: grid; grid-template-columns: minmax(0, 1fr) 190px; align-items: center; gap: 24px; }
+  .hero-copy { min-width: 0; }
+  .app-preview { margin: 0; text-align: center; }
+  .app-preview img { display: block; width: 190px; height: auto; border: 5px solid #160F0B; border-radius: 28px; background: #FAF7F2; box-shadow: 0 12px 28px #0005; }
+  .app-preview figcaption { margin-top: 12px; font-size: 12px; line-height: 1.5; color: var(--onhero); }
+  @media (max-width: 600px) {
+    .hero { grid-template-columns: minmax(0, 1fr); }
+    .app-preview { justify-self: center; }
+    .app-preview img { width: 168px; }
+  }
 </style>
 </head>
 <body>
 <main>
   <div class="hero">
+    <div class="hero-copy">
     <h1>おきに煎り</h1>
     <div class="en">COFFEE LOG</div>
     <p>毎日の一杯を記録して、あなた好みの淹れ方を見つけるアプリです。</p>
     <a class="download" href="https://apps.apple.com/jp/app/id6817787613">App Storeで入手</a>
     <p class="pricing">iPhone向け。全機能無料・広告あり。買い切りで広告を非表示にできます。月額料金はありません。</p>
+    </div>
+    <figure class="app-preview">
+      <img src="images/record-ja.png" width="1320" height="2868" alt="豆・器具・星の評価と「記録する」ボタンがある実際の記録画面" decoding="async">
+      <figcaption>実際の記録画面・サンプルデータ</figcaption>
+    </figure>
   </div>
 
   <section class="first-cup" aria-labelledby="first-cup-title">
